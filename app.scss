@@ -1,0 +1,133 @@
+$font-size: 2em;
+$font-color: white;
+$padding: 1.5em;
+
+body {
+  margin: 0;
+}
+
+#top-nav {
+  background-color: seagreen;
+  height: 4.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: $font-color;
+  }
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    padding: 1.5em;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: $font-color;
+  }
+}
+
+#product-card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+product {
+  display: flex;
+  width: 45%;
+  height: 45%;
+  border: 1px;
+  box-shadow: 5px 10px 10px rgba(92, 89, 89, 0.884);
+  margin: 2em 2em 2em 0em;
+
+  pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100px;
+    padding: 1em;
+    margin: auto;
+  }
+
+  information {
+    padding: $padding;
+    border-left: 8px solid seagreen;
+    border-radius: 0.5em;
+  }
+}
+
+#cart-card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+cartproduct {
+  display: flex;
+  width: 45%;
+  height: 45%;
+  border: 1px;
+  box-shadow: 5px 10px 10px rgba(92, 89, 89, 0.884);
+  margin: 2em 2em 2em 0em;
+
+  cartpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100px;
+    padding: 1em;
+    margin: auto;
+  }
+
+  cartinformation {
+    padding: $padding;
+    border-left: 8px solid seagreen;
+    border-radius: 0.5em;
+  }
+}
+
+#cartTotal{
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 25%;
+  border: 1px;
+  box-shadow: 1px 10px 10px rgba(92, 89, 89, 0.884);
+  padding: 2em;
+
+  #summary{  
+    margin: 0em 6em 0em 6em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+}
+
+#Total{
+  margin: none;
+  color: maroon;
+  font-weight: bold;
+}
+
+#delivery p{
+  margin: none;
+  border-bottom: 2.5px dashed seagreen;
+  padding-bottom: 1em;
+}
